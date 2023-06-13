@@ -171,6 +171,8 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+The code in this repository is licensed under the [MIT](./MIT.md). Feel free to fork this repository and modify it to suit your own needs, but please respect the license terms.
+
+Thank you for visiting my portfolio repository! If you have any questions or would like to collaborate, please reach out using the contact information provided on the website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
