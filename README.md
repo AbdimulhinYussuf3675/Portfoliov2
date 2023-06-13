@@ -30,9 +30,12 @@
 - [📝 License](#license)
 
 
-# 📖<a name="about-project">Math magicians</a>
+# 📖<a name="about-project">Adam Portfolio</a>
 
-> "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
+> "Adam Portfolio" This is my personal portfolio website . The portfolio showcases my skills, projects, and experiences as a software developer. It serves as a central hub where potential clients, employers, or collaborators can learn more about me, my work, and get in touch.
+
+Topics
+Resources
 
 <details>
   <summary>Client</summary>
