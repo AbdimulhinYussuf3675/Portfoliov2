@@ -34,19 +34,16 @@ const Navbar = () => {
           >
 
             <div>
-              <span className="links">
-                <ul>
-                  {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
-                    <li key={item}>
-                      <Link href={`#${item}`} activeClass="active" onClick={() => setToggle(false)}>
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <MdClose className="close" onClick={() => setToggle(false)} />
-              </span>
-
+              <MdClose className="close" onClick={() => setToggle(false)} />
+              <ul>
+                {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
+                  <li key={item}>
+                    <Link href={`#${item}`} activeClass="active" onClick={() => setToggle(false)}>
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
               <ul className="icons-container">
                 <li className="bannerIcon">
                   <a href="https://www.linkedin.com/in/abdimulhin-yussuf" target="_blank" rel="noopener noreferrer">
