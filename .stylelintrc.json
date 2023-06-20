@@ -15,7 +15,8 @@
       }
     ],
     "csstree/validator": true,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "font-family-no-missing-generic-family-keyword": null
   },
   "ignoreFiles": ["build/**", "dist/**", "**/reset*.css", "**/bootstrap*.css", "**/*.js", "**/*.jsx"]
 }

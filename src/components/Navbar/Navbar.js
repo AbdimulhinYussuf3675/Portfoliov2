@@ -13,10 +13,10 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <h1 className="app__navbar-logo desktop">Adam</h1>
+        <h1 className="app__navbar-h1">Adam</h1>
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'Blogs', 'contact'].map((item) => (
+        {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <div>
               <span className="links">
                 <ul>
-                  {['home', 'about', 'work', 'skills', 'Blogs', 'contact'].map((item) => (
+                  {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
                     <li key={item}>
                       <Link href={`#${item}`} activeClass="active" onClick={() => setToggle(false)}>
                         {item}

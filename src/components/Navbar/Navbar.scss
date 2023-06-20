@@ -18,13 +18,51 @@
   justify-content: flex-start;
   align-items: center;
 
-  .desktop {
+  .app__navbar-h1 {
     color: #7562e0;
+    margin-left: 30px;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    font-family: kalam;
+    text-shadow:
+      0 0 0 transparent,
+      0 0 10px #ff003c,
+      0 0 20px rgba(255, 0, 60, 0.5),
+      0 0 40px #ff003c,
+      0 0 100px #ff003c,
+      0 0 200px #1497e4,
+      0 0 300px #ff003c,
+      0 0 500px #ff003c,
+      0 0 1000px #ff003c;
+    animation: animate 2s infinite alternate;
+  }
 
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
+  @keyframes animate {
+    40% {
+      opacity: 1;
     }
+
+    42% {
+      opacity: 0.8;
+    }
+
+    43% {
+      opacity: 1;
+    }
+
+    45% {
+      opacity: 0.3;
+    }
+
+    46% {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 180px;
+    height: 40px;
   }
 }
 
