@@ -95,7 +95,6 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-    padding: 1rem;
     width: 70%;
     height: 100vh;
     display: flex;
@@ -177,7 +176,6 @@
         box-shadow: rgba(163, 159, 159, 0.35) 0 5px 15px;
       }
     }
-
 
     @media screen and (min-width: 900px) {
       display: none;
