@@ -6,15 +6,16 @@
   /* --primary-color: #edf2f8; */
 
   /* --primary-color: #fe932f1e; */
-  --primary-color: rgba(254, 147, 47, 0.03);
+  --primary-color: #7562e0;
 
   /* --secondary-color: #313bac; */
-  --secondary-color: #06f1de;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
+  --secondary-color: #282162;
+  --Low-priority: #848191;
+  --Light-color: #f5f5f5;
   --gray-color: #6b7688;
-  --brown-color: #46364a;
+  --dark-color: #000036;
   --white-color: #fff;
+  --hover-color: rgb(44, 240, 240);
 }
 
 * {

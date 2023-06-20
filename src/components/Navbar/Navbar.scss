@@ -4,9 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
-  // background: #fdefe5;
-  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background: #181824;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -19,9 +18,8 @@
   justify-content: flex-start;
   align-items: center;
 
-  img {
-    width: 85%;
-    height: 91px;
+  .desktop {
+    color: #7562e0;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
@@ -33,7 +31,7 @@
 .app__navbar-links {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
 
@@ -51,7 +49,7 @@
     }
 
     a {
-      color: var(--gray-color);
+      color: var(--white-color);
       text-decoration: none;
       flex-direction: column;
       text-transform: uppercase;
@@ -59,13 +57,13 @@
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: var(--secondary-color);
+        color: var(--hover-color);
       }
     }
 
     &:hover {
       div {
-        background: var(--secondary-color);
+        background: var(--hover-color);
       }
     }
   }
@@ -98,16 +96,18 @@
     right: 0;
     z-index: 5;
     padding: 1rem;
-    width: 80%;
+    width: 70%;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
     background: url('../../assets/bgWhite.png');
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
     background-size: cover;
     background-repeat: repeat;
+    padding: 0;
+    margin: 0;
 
     /* top box shadow */
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
@@ -115,7 +115,7 @@
     svg {
       width: 35px;
       height: 35px;
-      color: var(--secondary-color);
+      color: var(--white-color);
       margin: 0.5rem 1rem;
     }
 
@@ -141,12 +141,43 @@
           font-weight: 500;
           transition: all 0.3s ease-in-out;
 
+          .active {
+            color: var(--hover-color);
+          }
+
           &:hover {
-            color: var(--secondary-color);
+            color: var(--hover-color);
           }
         }
       }
     }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 90px;
+      margin-top: 10px;
+
+      svg {
+        width: 75px;
+      }
+    }
+
+    .icons-container {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .bannerIcon {
+        margin-bottom: 1rem;
+        border-radius: 15px;
+        box-shadow: rgba(163, 159, 159, 0.35) 0 5px 15px;
+      }
+    }
+
 
     @media screen and (min-width: 900px) {
       display: none;
