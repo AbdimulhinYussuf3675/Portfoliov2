@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <h1 className="app__navbar-h1">Adam</h1>
+        <h1 className="app__navbar-h1">Adamulhin</h1>
       </div>
       <ul className="app__navbar-links">
         {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
@@ -29,7 +29,7 @@ const Navbar = () => {
 
         {toggle && (
           <motion.div
-            whileInView={{ x: [250, 0] }}
+            whileInView={{ x: [220, 0] }}
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >
 
