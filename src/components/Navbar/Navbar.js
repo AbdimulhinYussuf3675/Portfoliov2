@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { MdClose } from 'react-icons/md';
+import { Link } from 'react-scroll';
+import { FiMenu } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import { FaAngellist, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
-import logo from '../../assets/minelogo.png';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -11,10 +13,10 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={logo} alt="logo" />
+        <h1 className="app__navbar-h1">Adamulhin</h1>
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'Blogs', 'contact'].map((item) => (
+        {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -23,23 +25,44 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <FiMenu onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
-            whileInView={{ x: [250, 0] }}
+            whileInView={{ x: [220, 0] }}
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >
-            <HiX onClick={() => setToggle(false)} />
-            <ul>
-              {['home', 'about', 'work', 'skills', 'Blogs', 'contact'].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
+
+            <div>
+              <MdClose className="close" onClick={() => setToggle(false)} />
+              <ul>
+                {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
+                  <li key={item}>
+                    <Link href={`#${item}`} activeClass="active" onClick={() => setToggle(false)}>
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <ul className="icons-container">
+                <li className="bannerIcon">
+                  <a href="https://www.linkedin.com/in/abdimulhin-yussuf" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedinIn />
                   </a>
                 </li>
-              ))}
-            </ul>
+                <li className="bannerIcon">
+                  <a href="https://twitter.com/abdimulhin" target="_blank" rel="noopener noreferrer">
+                    <FaTwitter />
+                  </a>
+                </li>
+                <li className="bannerIcon">
+                  <a href="https://wellfound.com/u/abdimulhin-yussuf" target="_blank" rel="noopener noreferrer">
+                    <FaAngellist />
+                  </a>
+                </li>
+              </ul>
+
+            </div>
           </motion.div>
         )}
       </div>
