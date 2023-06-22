@@ -1,0 +1,246 @@
+#home {
+  position: relative;
+  background: url('../../assets/skilsimgs//bgWhite.png');
+  // background: url("../../assets/bgWhite.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  box-sizing: border-box;
+
+  // disable the default padding styles
+  .app__wrapper {
+    padding: 0;
+
+    .copyright {
+      display: none;
+    }
+  }
+}
+
+.app__header {
+  flex: 1;
+  height: 100%;
+  flex-direction: row;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 6rem 1rem 2rem;
+  }
+}
+
+.app__header-info {
+  flex: 0.65;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  margin: 0 2rem;
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+    margin-right: 0;
+  }
+}
+
+.app__header-badge {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  .badge-cmp,
+  .tag-cmp {
+    padding: 1rem 2rem;
+    background: var(--dark-color);
+    border-radius: 15px;
+    flex-direction: row;
+    width: auto;
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+  }
+
+  .tag-cmp {
+    flex-direction: column;
+    margin-top: 3rem;
+
+    p {
+      width: 100%;
+      text-transform: uppercase;
+      text-align: left;
+      line-height: 21px;
+    }
+  }
+
+  span {
+    font-size: 2.5rem;
+    font-family: kalam;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 5rem;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 13%;
+  }
+
+  .download-button {
+    display: flex;
+    align-items: center;
+    color: var(--hover-color);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid aqua;
+    margin-top: 30px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+    transform: skewX(-10deg);
+    border-radius: 0 15px 0 15px;
+    transition: all 0.3s linear;
+    background: transparent;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #286090;
+    }
+
+    .download-icon {
+      margin-right: 20px;
+      font-size: 20px;
+      background: transparent;
+    }
+
+    @media screen and (max-width: 1200px) {
+      margin-left: 75px;
+    }
+  }
+}
+
+.app__header-circles {
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+  margin-left: 1rem;
+
+  div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(245, 244, 244, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+
+    img {
+      width: 60%;
+      height: 60%;
+      cursor: pointer;
+    }
+  }
+
+  div:nth-child(1) {
+    width: 70px;
+    height: 70px;
+  }
+
+  div:nth-child(2) {
+    margin: 0.3rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  div:nth-child(3) {
+    margin: 0.5rem;
+    width: 150px;
+    height: 150px;
+  }
+
+  div:nth-child(4) {
+    margin: 0.3rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  div:nth-child(5) {
+    width: 70px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: 2000px) {
+    div:nth-child(1) {
+      width: 90px;
+      height: 90px;
+    }
+
+    div:nth-child(2) {
+      width: 130px;
+      height: 130px;
+    }
+
+    div:nth-child(3) {
+      width: 260px;
+      height: 260px;
+    }
+
+    div:nth-child(4) {
+      width: 130px;
+      height: 130px;
+    }
+
+    div:nth-child(5) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+
+    div {
+      margin: 1rem;
+    }
+  }
+}
+
+.app__header-img {
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  .overlay_circle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 90%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 2rem 0;
+  }
+}

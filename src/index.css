@@ -3,6 +3,8 @@
 @font-face {
   font-family: kalam;
   src: url(./assets/fonts/Kalam-Light.ttf);
+  font-family: header;
+  src: url(./assets/fonts/KaushanScript-Regular.ttf);
 }
 
 :root {
