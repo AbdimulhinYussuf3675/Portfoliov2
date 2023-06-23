@@ -1,5 +1,4 @@
 .app {
-  
   font-family: var(--font-base);
 
   .app__whitebg {
@@ -103,10 +102,10 @@
   }
 
   .new4 {
-    height: .01em;
+    height: 0.01em;
     border: none;
     background-color: var(--white-color);
     width: 90%;
-    text-align: center;  
+    text-align: center;
   }
 }
