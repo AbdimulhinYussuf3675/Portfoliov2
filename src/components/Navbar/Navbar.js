@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { MdClose } from 'react-icons/md';
-import { Link } from 'react-scroll';
 import { FiMenu } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { FaAngellist, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
@@ -38,9 +37,9 @@ const Navbar = () => {
               <ul>
                 {['home', 'about', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
                   <li key={item}>
-                    <Link href={`#${item}`} activeClass="active" onClick={() => setToggle(false)}>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
                       {item}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

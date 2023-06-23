@@ -43,18 +43,17 @@ const About = () => {
       <hr className="new4" />
       <br />
       <h2 className="head-text">
-        The
-        <span className="about-header">Person&nbsp;</span>
-        Behind&nbsp;the&nbsp;Work
+        Get to Know
+        <span className="about-header">&nbsp;Abdimulhin</span>
       </h2>
       <div className="about-desc">
         <div className="p-text para">
           <p>
-            I&apos;m an ambitious Fullstack Developer who&apos;s passionate about
-            coding and loves building great products, features or websites.
-            I also love to reach out to new opportunities
-            accross the globe that will enhance my skills and get the
-            opportunity to collaborate with other programmers as well.
+            I&apos;m an ambitious Software Developer who&apos;s passionate about
+            programming and loves building great products, features or websites.
+            I also love to reach out for new opportunities
+            accross the globe that will enhance my skills and get an
+            opportunity to collaborate with other world class programmers as well.
           </p>
           <br />
           <p>
