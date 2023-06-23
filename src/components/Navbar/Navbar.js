@@ -16,7 +16,7 @@ const Navbar = () => {
         <h1 className="app__navbar-h1">Adamulhin</h1>
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
+        {['home', 'about', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <div>
               <MdClose className="close" onClick={() => setToggle(false)} />
               <ul>
-                {['home', 'about me', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
+                {['home', 'about', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
                   <li key={item}>
                     <Link href={`#${item}`} activeClass="active" onClick={() => setToggle(false)}>
                       {item}
