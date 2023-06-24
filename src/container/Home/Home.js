@@ -63,8 +63,8 @@ const Header = () => (
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text common">Freelance UI/UX designer, Fullstack developer & Code reviewer.</p>
-          <p className="p-text common">I create seamless web experiences for end-users.</p>
+          <p className="p-text common">Experienced Full Stack Developer & Proficient Coder. Turning Your Ideas into Reality:</p>
+          <p className="p-text common">Explore My Portfolio and Experience in Building Products, Features, and Websites</p>
         </div>
 
         <button type="button" className="download-button" onClick={handleDownload}>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import fullstack from '../../assets/skilsimgs/datascientist.png';
+import fullstack from '../../assets/skilsimgs/designer.png';
 import backend from '../../assets/skilsimgs/backend.png';
 import frontend from '../../assets/skilsimgs/frontend.png';
 
@@ -12,12 +12,12 @@ const About = () => {
   // Simulated function to get about data
   const getAboutData = () => [
     {
-      title: 'Full-stack Web Development',
+      title: 'Full-stack Development',
       imgUrl: frontend,
       description: 'As a full-stack developer, I have experience in both front-end and back-end technologies. I excel at developing end-to-end solutions, from designing intuitive user interfaces using modern frameworks.',
     },
     {
-      title: 'Frontend Developer',
+      title: 'Frontend Development',
       imgUrl: fullstack,
       description: 'As a front-end developer, I specialize in creating visually appealing and responsive user interfaces. I have expertise in front-end frameworks like React. I strive to create engaging and intuitive web applications.',
     },
@@ -43,18 +43,17 @@ const About = () => {
       <hr className="new4" />
       <br />
       <h2 className="head-text">
-        The
-        <span className="about-header">Person&nbsp;</span>
-        Behind&nbsp;the&nbsp;Work
+        Get to Know
+        <span className="about-header">&nbsp;Abdimulhin</span>
       </h2>
       <div className="about-desc">
         <div className="p-text para">
           <p>
-            I&apos;m an ambitious Fullstack Developer who&apos;s passionate about
-            coding and loves building great products, features or websites.
-            I also love to reach out to new opportunities
-            accross the globe that will enhance my skills and get the
-            opportunity to collaborate with other programmers as well.
+            I&apos;m an ambitious Software Developer who&apos;s passionate about
+            programming and loves building great products, features or websites.
+            I also love to reach out for new opportunities
+            accross the globe that will enhance my skills and get an
+            opportunity to collaborate with other world class programmers as well.
           </p>
           <br />
           <p>

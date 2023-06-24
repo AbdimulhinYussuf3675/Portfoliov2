@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { MdClose } from 'react-icons/md';
-import { Link } from 'react-scroll';
 import { FiMenu } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { FaAngellist, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
@@ -16,7 +15,7 @@ const Navbar = () => {
         <h1 className="app__navbar-h1">Adamulhin</h1>
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
+        {['home', 'about', 'projects', 'skills', 'Blogs', 'contact'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>
@@ -36,11 +35,11 @@ const Navbar = () => {
             <div>
               <MdClose className="close" onClick={() => setToggle(false)} />
               <ul>
-                {['home', 'about', 'skills', 'projects', 'Blogs', 'contact'].map((item) => (
+                {['home', 'about', 'projects', 'skills', 'blogs', 'contact'].map((item) => (
                   <li key={item}>
-                    <Link href={`#${item}`} activeClass="active" onClick={() => setToggle(false)}>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
                       {item}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
