@@ -123,9 +123,9 @@ const Work = () => {
       <h2 className="head-text">
         My
         {' '}
-        <span className="about-header">Creative&nbsp;</span>
+        <span className="about-header">Project&nbsp;</span>
         {' '}
-        Portfolio
+        Showcase
       </h2>
 
       <div className="app__work-filter">
