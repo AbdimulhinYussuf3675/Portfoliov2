@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import fullstack from '../../assets/skilsimgs/datascientist.png';
+import fullstack from '../../assets/skilsimgs/designer.png';
 import backend from '../../assets/skilsimgs/backend.png';
 import frontend from '../../assets/skilsimgs/frontend.png';
 
@@ -12,12 +12,12 @@ const About = () => {
   // Simulated function to get about data
   const getAboutData = () => [
     {
-      title: 'Full-stack Web Development',
+      title: 'Full-stack Development',
       imgUrl: frontend,
       description: 'As a full-stack developer, I have experience in both front-end and back-end technologies. I excel at developing end-to-end solutions, from designing intuitive user interfaces using modern frameworks.',
     },
     {
-      title: 'Frontend Developer',
+      title: 'Frontend Development',
       imgUrl: fullstack,
       description: 'As a front-end developer, I specialize in creating visually appealing and responsive user interfaces. I have expertise in front-end frameworks like React. I strive to create engaging and intuitive web applications.',
     },
