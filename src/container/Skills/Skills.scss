@@ -45,7 +45,7 @@
     img {
       width: 50%;
       height: 50%;
-      background-color: rgb(18, 52, 86);;
+      background-color: rgb(18, 52, 86);
     }
 
     &:hover {
@@ -114,7 +114,6 @@
       font-size: 20px;
       color: var(--white-color);
       font-family: kalam;
-
     }
 
     p {
@@ -123,7 +122,6 @@
       color: var(--hover-color);
       margin-top: 5px;
       font-family: kalam;
-
     }
   }
 }
@@ -136,7 +134,6 @@
     color: var(--primary-color);
     font-size: large;
     font-family: kalam;
-    
   }
 
   @media screen and (max-width: 450px) {
