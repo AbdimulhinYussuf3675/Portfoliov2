@@ -8,7 +8,7 @@ import profile from '../../assets/skilsimgs/profile.png';
 import sassimg from '../../assets/skilsimgs/sass.png';
 import reactimg from '../../assets/skilsimgs/react.png';
 import JSimg from '../../assets/skilsimgs/JS.png';
-import rubyimg from '../../assets/skilsimgs/ruby-red.svg';
+import rubyimg from '../../assets/skilsimgs/skillsection/ruby.png';
 import resume from '../../assets/AbdimulhinAdan.pdf';
 
 const scaleVariants = {
