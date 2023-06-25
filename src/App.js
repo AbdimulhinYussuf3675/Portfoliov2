@@ -5,6 +5,7 @@ import Header from './container/Home/Home';
 import About from './container/About/About';
 import Work from './container/Project/Projects';
 import Skills from './container/Skills/Skills';
+import Contact from './container/Contact/Contact';
 
 import './App.scss';
 
@@ -15,6 +16,8 @@ const App = () => (
     <About />
     <Work />
     <Skills />
+    <Contact />
+
   </div>
 );
 

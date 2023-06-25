@@ -117,4 +117,33 @@
       font-size: 1.75rem;
     }
   }
+
+  .form-text {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--dark-color);
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+  }
+
+  .form-confirm {
+    font-family: header;
+  }
+
+  .copyright {
+    width: 100%;
+    padding: 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    p {
+      text-transform: uppercase;
+      color: var(--white-color);
+      font-family: header;
+    }
+  }
 }
