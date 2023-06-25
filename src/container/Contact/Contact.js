@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
+import {
+  FaAngellist, FaTwitter, FaLinkedinIn, FaGithub,
+} from 'react-icons/fa';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Contact.scss';
 import mail from '../../assets/skilsimgs/skillsection/email.png';
@@ -57,6 +60,44 @@ const Footer = () => {
         <span className="about-header">Touch!</span>
       </h2>
 
+      <ul className="icons-container">
+        <li className="bannerIcon">
+          <a href="https://www.linkedin.com/in/abdimulhin-yussuf" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
+        </li>
+        <li className="bannerIcon">
+          <a href="https://github.com/AbdimulhinYussuf3675" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+        </li>
+        <li className="bannerIcon">
+          <a href="https://twitter.com/abdimulhin" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
+        </li>
+        <li className="bannerIcon">
+          <a href="https://wellfound.com/u/abdimulhin-yussuf" target="_blank" rel="noopener noreferrer">
+            <FaAngellist />
+          </a>
+        </li>
+      </ul>
+
+      <div className="app__footer-cards">
+        <div className="app__footer-card ">
+          <img src={mail} alt="email" />
+          <a href="mailto:adamabdimulhi.001@gmail.com" className="p-text">
+            adamabdimulhi.001@gmail.com
+          </a>
+        </div>
+        <div className="app__footer-card">
+          <img src={mobile} alt="phone" />
+          <a href="tel:(+254) 718878917" className="p-text">
+            (+254) 718878917
+          </a>
+        </div>
+      </div>
+
       <div className="about-desc">
         <div className="p-contact para">
           <p>
@@ -71,21 +112,6 @@ const Footer = () => {
             <em>&quot;GIG&quot;</em>
           </p>
 
-        </div>
-      </div>
-
-      <div className="app__footer-cards">
-        <div className="app__footer-card ">
-          <img src={mail} alt="email" />
-          <a href="mailto:adamabdimulhi.001@gmail.com" className="p-text">
-            adamabdimulhi.001@gmail.com
-          </a>
-        </div>
-        <div className="app__footer-card">
-          <img src={mobile} alt="phone" />
-          <a href="tel:(+254) 718878917" className="p-text">
-            (+254) 718878917
-          </a>
         </div>
       </div>
 
