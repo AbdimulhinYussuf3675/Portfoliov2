@@ -60,10 +60,17 @@ const Footer = () => {
       <div className="about-desc">
         <div className="p-contact para">
           <p>
-            Feel free to connect with me through my social media channels or
-            contact me directly using the form below to send mail.
-            Your satisfaction is important to me!
+            I&lsquo;d love if you reach out to me. Even if it&lsquo;s just to
+            say &quot;Hey!&quot;. Don&lsquo;t hesitate! Drop me a line and I&lsquo;ll
+            get back to you ASAP!:
           </p>
+          <br />
+          <p>
+            You can use the form, For gig and other opportunities, begin your subject with
+            {' '}
+            <em>&quot;GIG&quot;</em>
+          </p>
+
         </div>
       </div>
 
@@ -133,7 +140,7 @@ const Footer = () => {
       )}
 
       <div className="copyright">
-        <p className="p-text">@2020 Abdimulhin A.</p>
+        <p className="p-text">@2023 Abdimulhin A.</p>
         <p className="p-text">All rights reserved</p>
       </div>
     </>
