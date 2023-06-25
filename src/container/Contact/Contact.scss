@@ -3,8 +3,66 @@
   width: 100%;
   flex-direction: column;
 
+  .icons-container {
+    display: none;
+  }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      li {
+        margin: 1rem;
+
+        a {
+          color: var(--gray-color);
+          text-decoration: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+
+          .active {
+            color: var(--hover-color);
+          }
+
+          &:hover {
+            color: var(--hover-color);
+          }
+        }
+      }
+    }
+
+    svg {
+      width: 35px;
+      height: 35px;
+      color: var(--white-color);
+      margin: 0.5rem 1rem;
+    }
+
+    .icons-container {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .bannerIcon {
+        margin-bottom: 1rem;
+        border-radius: 15px;
+        box-shadow: rgba(163, 159, 159, 0.35) 0 5px 15px;
+      }
+    }
   }
 }
 
@@ -57,6 +115,7 @@
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    margin: 2em 2rem 2rem;
   }
 }
 
@@ -72,6 +131,7 @@
   width: 60%;
   flex-direction: column;
   margin: 1rem 2rem;
+  margin-top: 2rem;
 
   div {
     width: 100%;
@@ -132,15 +192,15 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   .para {
     font-family: kalam;
     text-align: center;
     width: 50%;
     font-size: 18px;
-    letter-spacing: 0.055em;
-    line-height: 18px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
     color: var(--white-color);
 
     @media screen and (max-width: 450px) {

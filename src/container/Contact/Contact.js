@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
+import {
+  FaAngellist, FaTwitter, FaLinkedinIn, FaGithub,
+} from 'react-icons/fa';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Contact.scss';
 import mail from '../../assets/skilsimgs/skillsection/email.png';
@@ -57,15 +60,28 @@ const Footer = () => {
         <span className="about-header">Touch!</span>
       </h2>
 
-      <div className="about-desc">
-        <div className="p-contact para">
-          <p>
-            Feel free to connect with me through my social media channels or
-            contact me directly using the form below to send mail.
-            Your satisfaction is important to me!
-          </p>
-        </div>
-      </div>
+      <ul className="icons-container">
+        <li className="bannerIcon">
+          <a href="https://www.linkedin.com/in/abdimulhin-yussuf" target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
+          </a>
+        </li>
+        <li className="bannerIcon">
+          <a href="https://github.com/AbdimulhinYussuf3675" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+        </li>
+        <li className="bannerIcon">
+          <a href="https://twitter.com/abdimulhin" target="_blank" rel="noopener noreferrer">
+            <FaTwitter />
+          </a>
+        </li>
+        <li className="bannerIcon">
+          <a href="https://wellfound.com/u/abdimulhin-yussuf" target="_blank" rel="noopener noreferrer">
+            <FaAngellist />
+          </a>
+        </li>
+      </ul>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
@@ -79,6 +95,23 @@ const Footer = () => {
           <a href="tel:(+254) 718878917" className="p-text">
             (+254) 718878917
           </a>
+        </div>
+      </div>
+
+      <div className="about-desc">
+        <div className="p-contact para">
+          <p>
+            I&lsquo;d love if you reach out to me. Even if it&lsquo;s just to
+            say &quot;Hey!&quot;. Don&lsquo;t hesitate! Drop me a line and I&lsquo;ll
+            get back to you ASAP!:
+          </p>
+          <br />
+          <p>
+            You can use the form, For gig and other opportunities, begin your subject with
+            {' '}
+            <em>&quot;GIG&quot;</em>
+          </p>
+
         </div>
       </div>
 
@@ -133,7 +166,7 @@ const Footer = () => {
       )}
 
       <div className="copyright">
-        <p className="p-text">@2020 Abdimulhin A.</p>
+        <p className="p-text">@2023 Abdimulhin A.</p>
         <p className="p-text">All rights reserved</p>
       </div>
     </>

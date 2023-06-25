@@ -1,0 +1,58 @@
+.app__social {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  float: right;
+  right: 40px;
+
+  div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--dark-color);
+    margin: 0.25rem 0;
+    border: 1px solid var(--lightGray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      li {
+        margin: 1rem;
+
+        a {
+          color: var(--white-color);
+          text-decoration: none;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+
+          .active {
+            color: var(--hover-color);
+          }
+
+          &:hover {
+            color: var(--hover-color);
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
