@@ -8,7 +8,7 @@ import './Project.scss';
 import blog from '../../assets/projects/blog.png';
 import leaderboad from '../../assets/projects/leadbod.jpeg';
 import mnet from '../../assets/projects/1678431582874.jpeg';
-import todolist from '../../assets/projects/todo.png';
+import bookStore from '../../assets/projects/bookstore.png';
 import budget from '../../assets/projects/butget.png';
 import space from '../../assets/projects/space.png';
 
@@ -50,13 +50,12 @@ const worksData = [
     codeLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
   },
   {
-    title: 'To-Do list',
-    description:
-      'This is a VueJS project that enables the user to add, edit and delete todo. A user can drag and drop to reoder the list.',
-    tags: ['VueJS'],
-    imgUrl: todolist,
-    projectLink: 'https://abdimulhinvue-to-do-l-ist.vercel.app/',
-    codeLink: 'https://github.com/AbdimulhinYussuf3675/Vue_To_do-LIst',
+    title: 'BookStore',
+    description: 'This is a website that allows users to add and remove a book, and display a the list of books added on the page.',
+    tags: ['React JS', 'JavaScript'],
+    imgUrl: bookStore,
+    projectLink: 'https://adam-store.onrender.com/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
   },
   {
     title: 'Budget App',
