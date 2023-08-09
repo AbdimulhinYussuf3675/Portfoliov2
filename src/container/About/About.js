@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './About.scss';
 import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import fullstack from '../../assets/skilsimgs/designer.png';
-import backend from '../../assets/skilsimgs/backend.png';
-import frontend from '../../assets/skilsimgs/frontend.png';
+import fullstack from '../../assets/skilsimgs/back2.png';
+import backend from '../../assets/skilsimgs/back3.png';
+import frontend from '../../assets/skilsimgs/front2.svg';
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -13,12 +13,12 @@ const About = () => {
   const getAboutData = () => [
     {
       title: 'Full-stack Development',
-      imgUrl: frontend,
+      imgUrl: fullstack,
       description: 'As a full-stack developer, I have experience in both front-end and back-end technologies. I excel at developing end-to-end solutions, from designing intuitive user interfaces using modern frameworks.',
     },
     {
       title: 'Frontend Development',
-      imgUrl: fullstack,
+      imgUrl: frontend,
       description: 'As a front-end developer, I specialize in creating visually appealing and responsive user interfaces. I have expertise in front-end frameworks like React. I strive to create engaging and intuitive web applications.',
     },
     {
@@ -72,7 +72,7 @@ const About = () => {
             key={about.title + index}
           >
             <img src={about.imgUrl} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
+            <h2 className="bold-text title" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text bold-desc" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
         ))}

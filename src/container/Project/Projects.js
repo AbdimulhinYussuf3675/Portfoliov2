@@ -34,7 +34,7 @@ const worksData = [
   {
     title: 'Leaderboard',
     description: 'The leaderboard website displays scores submitted by different players.Players submit their scores. All data is preserved to the external Leaderboard API service.',
-    tags: ['JS'],
+    tags: ['JavaScript'],
     imgUrl: leaderboad,
     projectLink: 'https://github.com/AbdimulhinYussuf3675/Leaderboard',
     codeLink: 'https://abdimulhinyussuf3675.github.io/Leaderboard/dist/',
@@ -44,21 +44,21 @@ const worksData = [
     description: 'This project is a movie website with features of adding comment, tap on like to show interest and make reservations',
     tags: ['JS'],
     imgUrl: mnet,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Mnet_Movie',
-    codeLink: 'https://abdimulhinyussuf3675.github.io/Mnet_Movie/dist/',
+    projectLink: 'https://abdimulhinyussuf3675.github.io/Mnet_Movie/dist/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Mnet_Movie',
   },
   {
     title: 'BookStore',
     description: 'This is a website that allows users to add and remove a book, and display a the list of books added on the page.',
-    tags: ['React JS', 'JS'],
+    tags: ['React JS', 'JavaScript'],
     imgUrl: bookStore,
     projectLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
     codeLink: 'https://adam-bookshop.onrender.com/',
   },
   {
     title: 'To-Do list',
-    description: 'This is a JavaScript and Vue project that enables the user to add, edit and delete todo. The user can also drag and drop a particular todo to reoder the list.',
-    tags: ['Vue JS'],
+    description: 'This is a VueJS project that enables the user to add, edit and delete todo. A user can drag and drop to reoder the list.',
+    tags: ['VueJS'],
     imgUrl: todolist,
     projectLink: 'https://github.com/AbdimulhinYussuf3675/Vue_To_do-LIst',
     codeLink: 'https://abdimulhinvue-to-do-l-ist.vercel.app/',
@@ -74,7 +74,7 @@ const worksData = [
   {
     title: 'Population-Count',
     description: 'This is a web-app that allows users to have access to population data of countries across the world.',
-    tags: ['React JS', 'JS'],
+    tags: ['ReactJS', 'JavaScript'],
     imgUrl: catstone3,
     projectLink: 'https://adam-census.onrender.com/',
     codeLink: 'https://github.com/AbdimulhinYussuf3675/React-capstone_project',
@@ -162,7 +162,6 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              {/* Replace 'work.imgUrl' with the appropriate URL or path to your image */}
               <img src={work.imgUrl} alt={work.title} />
 
               <motion.div
@@ -198,9 +197,33 @@ const Work = () => {
               <p className="p-text" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
-
               <div className="app__work-tag app__flex">
-                <p className="tag-text">{work.tags[0]}</p>
+                <p className="tag-text">
+                  Stacks:&nbsp;&nbsp;
+                  {work.tags[0]}
+                </p>
+              </div>
+              <div className="codeLinks">
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex"
+                  >
+                    <TbWorld />
+                  </motion.div>
+                </a>
+                <a href={work.codeLink} target="_blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex"
+                  >
+                    <AiFillGithub />
+                  </motion.div>
+                </a>
               </div>
             </div>
           </div>

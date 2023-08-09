@@ -52,7 +52,7 @@
     width: 270px;
     flex-direction: column;
     margin: 2rem;
-    padding: 1rem;
+    padding: .4rem;
     border-radius: 0.5rem;
     background-color: var(--Light-color);
     color: #000;
@@ -131,6 +131,7 @@
   width: 100%;
   position: relative;
   flex-direction: column;
+  
 
   h4 {
     margin-top: 1rem;
@@ -156,7 +157,19 @@
       line-height: 1;
       background-color: var(--secondary-color);
       color: var(--white-color);
-      font-family: header;
+      font-family: kalam;
     }
+  }
+  .codeLinks {
+    display: flex;
+    gap: 30px;
+    margin-left: 20px;
+    font-size: 30px;
+    margin: .5em;
+
+    svg {
+    color: var(--white-color);
+    }
+
   }
 }
