@@ -20,8 +20,8 @@ const worksData = [
     description: 'This is a classic example of a blog website. Its fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.',
     tags: ['Ruby', 'Rails'],
     imgUrl: blog,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Blog-app',
-    codeLink: 'https://blogapp-r0oh.onrender.com/',
+    projectLink: 'https://blogapp-r0oh.onrender.com/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Blog-app',
   },
   {
     title: 'Catalog of my things',
@@ -36,8 +36,8 @@ const worksData = [
     description: 'The leaderboard website displays scores submitted by different players.Players submit their scores. All data is preserved to the external Leaderboard API service.',
     tags: ['JavaScript'],
     imgUrl: leaderboad,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Leaderboard',
-    codeLink: 'https://abdimulhinyussuf3675.github.io/Leaderboard/dist/',
+    projectLink: 'https://abdimulhinyussuf3675.github.io/Leaderboard/dist/ ',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Leaderboard',
   },
   {
     title: 'MNnet',
@@ -52,16 +52,16 @@ const worksData = [
     description: 'This is a website that allows users to add and remove a book, and display a the list of books added on the page.',
     tags: ['React JS', 'JavaScript'],
     imgUrl: bookStore,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
-    codeLink: 'https://adam-bookshop.onrender.com/',
+    projectLink: 'https://adam-bookshop.onrender.com/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
   },
   {
     title: 'To-Do list',
     description: 'This is a VueJS project that enables the user to add, edit and delete todo. A user can drag and drop to reoder the list.',
     tags: ['VueJS'],
     imgUrl: todolist,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Vue_To_do-LIst',
-    codeLink: 'https://abdimulhinvue-to-do-l-ist.vercel.app/',
+    projectLink: 'https://abdimulhinvue-to-do-l-ist.vercel.app/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Vue_To_do-LIst',
   },
   {
     title: 'Adam Studios',
@@ -176,7 +176,7 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
-                    <TbWorld />
+                    <AiFillGithub />
                   </motion.div>
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
@@ -186,7 +186,8 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
-                    <AiFillGithub />
+
+                    <TbWorld />
                   </motion.div>
                 </a>
               </motion.div>
