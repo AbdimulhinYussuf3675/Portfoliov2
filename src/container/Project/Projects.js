@@ -8,76 +8,63 @@ import './Project.scss';
 import blog from '../../assets/projects/blog.png';
 import leaderboad from '../../assets/projects/leadbod.jpeg';
 import mnet from '../../assets/projects/1678431582874.jpeg';
-import todolist from '../../assets/projects/todo.png';
-import catstone1 from '../../assets/projects/cp1.png';
-import catstone3 from '../../assets/projects/cp3.png';
 import bookStore from '../../assets/projects/bookstore.png';
-import mathmajician from '../../assets/projects/math.jpeg';
+import budget from '../../assets/projects/butget.png';
+import space from '../../assets/projects/space.png';
 
 const worksData = [
   {
     title: 'Blog-App',
-    description: 'This is a classic example of a blog website. Its fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.',
-    tags: ['Ruby', 'Rails'],
+    description:
+      'This is a classic example of a blog website. Its fully functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.',
+    tags: ['Ruby on Rails', 'Ruby'],
     imgUrl: blog,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Blog-app',
-    codeLink: 'https://blogapp-r0oh.onrender.com/',
-  },
-  {
-    title: 'Catalog of my things',
-    description: 'This is a Console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games.',
-    tags: ['Ruby'],
-    imgUrl: mathmajician,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/catalog-of-my-things',
-    codeLink: 'NA',
+    projectLink: 'https://blogapp-r0oh.onrender.com/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Blog-app',
   },
   {
     title: 'Leaderboard',
-    description: 'The leaderboard website displays scores submitted by different players.Players submit their scores. All data is preserved to the external Leaderboard API service.',
-    tags: ['JS'],
+    description:
+      'The leaderboard website displays scores submitted by different players.Players submit their scores. All data is preserved to the external Leaderboard API service.',
+    tags: ['JavaScript'],
     imgUrl: leaderboad,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Leaderboard',
-    codeLink: 'https://abdimulhinyussuf3675.github.io/Leaderboard/dist/',
+    projectLink: 'https://abdimulhinyussuf3675.github.io/Leaderboard/dist/ ',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Leaderboard',
   },
   {
     title: 'MNnet',
-    description: 'This project is a movie website with features of adding comment, tap on like to show interest and make reservations',
+    description:
+      'This project is a movie website with features of adding comment, tap on like to show interest and make reservations',
     tags: ['JS'],
     imgUrl: mnet,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Mnet_Movie',
-    codeLink: 'https://abdimulhinyussuf3675.github.io/Mnet_Movie/dist/',
+    projectLink: 'https://abdimulhinyussuf3675.github.io/Mnet_Movie/dist/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Mnet_Movie',
+  },
+  {
+    title: 'Space Travelers` Hub',
+    description:
+      'This is a React WebApp with real live data from the SpaceX API. The application will allow users to book rockets and join selected space missions. Built with JavaScript, ReactJS, Redux, and CSS3.',
+    tags: ['React JS', 'JavaScript'],
+    imgUrl: space,
+    projectLink: 'https://adam-bookshop.onrender.com/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
   },
   {
     title: 'BookStore',
     description: 'This is a website that allows users to add and remove a book, and display a the list of books added on the page.',
-    tags: ['React JS', 'JS'],
+    tags: ['React JS', 'JavaScript'],
     imgUrl: bookStore,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
-    codeLink: 'https://adam-bookshop.onrender.com/',
+    projectLink: 'https://adam-store.onrender.com/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Bookstore',
   },
   {
-    title: 'To-Do list',
-    description: 'This is a JavaScript and Vue project that enables the user to add, edit and delete todo. The user can also drag and drop a particular todo to reoder the list.',
-    tags: ['Vue JS'],
-    imgUrl: todolist,
-    projectLink: 'https://github.com/AbdimulhinYussuf3675/Vue_To_do-LIst',
-    codeLink: 'https://abdimulhinvue-to-do-l-ist.vercel.app/',
-  },
-  {
-    title: 'Adam Studios',
-    description: 'The goal here is to master all of the tools and best practices of HTML,CSS and JavaScript.',
-    tags: ['HTML&CSS'],
-    imgUrl: catstone1,
-    projectLink: 'https://adamspace.onrender.com/',
-    codeLink: 'https://github.com/AbdimulhinYussuf3675/Space_Travelers--Hub',
-  },
-  {
-    title: 'Population-Count',
-    description: 'This is a web-app that allows users to have access to population data of countries across the world.',
-    tags: ['React JS', 'JS'],
-    imgUrl: catstone3,
-    projectLink: 'https://adam-census.onrender.com/',
-    codeLink: 'https://github.com/AbdimulhinYussuf3675/React-capstone_project',
+    title: 'Budget App',
+    description:
+      'This is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    tags: ['Ruby on Rails', 'Ruby'],
+    imgUrl: budget,
+    projectLink: 'https://budgetapp-os5q.onrender.com/',
+    codeLink: 'https://github.com/AbdimulhinYussuf3675/Budget-app',
   },
 ];
 
@@ -103,7 +90,9 @@ const Work = () => {
       if (item === 'All') {
         filteredWorks = works.slice(0, 9);
       } else {
-        filteredWorks = works.filter((work) => work.tags.includes(item)).slice(0, 9);
+        filteredWorks = works
+          .filter((work) => work.tags.includes(item))
+          .slice(0, 9);
       }
 
       setFilterWork(filteredWorks);
@@ -131,7 +120,7 @@ const Work = () => {
       <div className="app__work-filter">
         {[
           'Ruby',
-          'Rails',
+          'Ruby on Rails',
           'HTML&CSS',
           'JS',
           'React JS',
@@ -162,12 +151,15 @@ const Work = () => {
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              {/* Replace 'work.imgUrl' with the appropriate URL or path to your image */}
               <img src={work.imgUrl} alt={work.title} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
-                transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+                transition={{
+                  duration: 0.25,
+                  ease: 'easeInOut',
+                  staggerChildren: 0.5,
+                }}
                 className="app__work-hover"
               >
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
@@ -198,9 +190,33 @@ const Work = () => {
               <p className="p-text" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
-
               <div className="app__work-tag app__flex">
-                <p className="tag-text">{work.tags[0]}</p>
+                <p className="tag-text">
+                  Stacks:&nbsp;&nbsp;
+                  {work.tags[0]}
+                </p>
+              </div>
+              <div className="codeLinks">
+                <a href={work.projectLink} target="_blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex"
+                  >
+                    <TbWorld />
+                  </motion.div>
+                </a>
+                <a href={work.codeLink} target="_blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{ scale: [0, 1] }}
+                    whileHover={{ scale: [1, 0.9] }}
+                    transition={{ duration: 0.25 }}
+                    className="app__flex"
+                  >
+                    <AiFillGithub />
+                  </motion.div>
+                </a>
               </div>
             </div>
           </div>
@@ -210,4 +226,8 @@ const Work = () => {
   );
 };
 
-export default AppWrap(MotionWrap(Work, 'app__works'), 'projects', 'app__primarybg');
+export default AppWrap(
+  MotionWrap(Work, 'app__works'),
+  'projects',
+  'app__primarybg',
+);
