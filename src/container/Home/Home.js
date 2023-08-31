@@ -9,7 +9,7 @@ import sassimg from '../../assets/skilsimgs/sass.png';
 import reactimg from '../../assets/skilsimgs/react.png';
 import JSimg from '../../assets/skilsimgs/JS.png';
 import rubyimg from '../../assets/skilsimgs/skillsection/ruby.png';
-import resume from '../../assets/AbdimulhinAdan.pdf';
+import resume from '../../assets/Abdimulhin_Yussuf_Resume.pdf';
 
 const scaleVariants = {
   whileInView: {
@@ -23,10 +23,8 @@ const scaleVariants = {
 };
 
 const handleDownload = () => {
-  // Replace 'resume.pdf' with the actual path or URL of your resume file
   const resumeUrl = resume;
 
-  // Open the resume file in a new window or tab
   window.open(resumeUrl, '_blank');
 };
 
