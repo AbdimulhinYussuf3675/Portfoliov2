@@ -31,6 +31,16 @@ const Skills = () => {
     setTimeout(() => {
       const experiencesData = [
         {
+          year: '2023 - Present ',
+          works: [
+            {
+              name: 'Frontend Developer | QA engineer',
+              company: 'JUUBIX',
+              desc: 'During my tenure at JUUBIX as a Frontend and Q/A Developer, I continue to make substantial contributions to the team&apos;s success. My primary achievement is crafting innovative Fintech applications using Next.js, TypeScript, and Tailwind CSS, resulting in cutting-edge products that offer a seamless user experience. In addition to my front-end development responsibilities, I take on a dual role in Quality Assurance (Q/A). This encompasses ensuring the robustness and reliability of our applications. I design and execute comprehensive testing strategies, ensuring our software consistently meets the highest quality standards.',
+            },
+          ],
+        },
+        {
           year: '2022 - 2023 ',
           works: [
             {
