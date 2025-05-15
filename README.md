@@ -32,7 +32,7 @@
 
 # 📖<a name="about-project">Adam Portfolio</a>
 
-> "Adam Portfolio" This is my personal portfolio website . The portfolio showcases my skills, projects, and experiences as a software developer. It serves as a central hub where potential clients, employers, or collaborators can learn more about me, my work, and get in touch.
+> "Adam Portfolio" This is my personal portfolio website. The portfolio showcases my skills, projects, and experiences as a software developer. It serves as a central hub where potential clients, employers, or collaborators can learn more about me and my work and get in touch.
 
 Topics
 Resources
